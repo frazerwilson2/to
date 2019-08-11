@@ -1,0 +1,43 @@
+.continer {
+    width: 1000px;
+    margin: auto;
+    box-shadow: 0 0 3px #00000021;
+    padding: 20px;
+    display: grid;
+    grid-template-areas: 'head head' 'users locations';
+}
+
+.selector {
+    grid-area: head;
+}
+
+.selector select {
+    margin-right: 10px;
+}
+
+.users {
+    grid-area: users;
+}
+
+.users li {
+    margin: 10px 0;
+}
+
+.users button {
+    border-radius: 4px;
+    background: #efefef;
+    font-size: 10px;
+}
+
+.locations {
+    grid-area: locations;
+}
+
+.locations ul {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.locations ul li:before {
+    content: '😞 '
+}
